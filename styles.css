@@ -1,0 +1,8 @@
+/* Custom dark styling and scrollbar */
+#chatWindow::-webkit-scrollbar { width: 8px; }
+#chatWindow::-webkit-scrollbar-thumb { background: #4f2d9f; border-radius: 999px; }
+#chatWindow::-webkit-scrollbar-track { background: #111528; }
+
+.message { max-width: 85%; }
+.message.user { margin-left: auto; background: linear-gradient(120deg, #fb8f2a, #f26d35); color: #111827; }
+.message.bot { margin-right: auto; background: #20254b; color: #e2e8f0; }

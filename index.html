@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CipherNyx Chatbot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-[#0d1018] text-slate-100 min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-3xl">
+    <div class="rounded-3xl border border-[#4f2d9f] bg-gradient-to-br from-[#151b2f] via-[#101227] to-[#1b1735] shadow-2xl">
+      <header class="flex items-center gap-3 px-5 py-4 border-b border-[#2d2b4e]">
+        <img src="logo.png" alt="CipherNyx logo" class="h-12 w-12 rounded-xl border border-[#f9a826]" />
+        <div>
+          <p class="text-xs uppercase tracking-[0.25em] text-[#f8a62b]">Powered by CipherNyx</p>
+          <h1 class="text-2xl font-semibold text-white">CipherNyx Chatbot</h1>
+          <p class="text-sm text-slate-300">AI assistant for quick chat demos</p>
+        </div>
+      </header>
+
+      <main class="p-4 h-[62vh] flex flex-col gap-3">
+        <div id="chatWindow" class="flex-1 overflow-y-auto space-y-3 rounded-2xl border border-[#2c2a4a] bg-[#111528] p-3">
+          <div class="text-center text-xs text-slate-400">Start chatting with the bot. Type a message and press Send.</div>
+        </div>
+
+        <form id="chatForm" class="flex gap-2">
+          <input id="chatInput" type="text" placeholder="Type your message..." class="w-full rounded-xl border border-[#3f3a68] bg-[#141b35] px-4 py-2 text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#f9a826]" required />
+          <button type="submit" class="rounded-xl bg-gradient-to-r from-[#f9a826] to-[#f26d35] px-4 py-2 font-semibold text-[#0b0a12] hover:opacity-95">Send</button>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
